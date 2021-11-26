@@ -1,0 +1,194 @@
+/*-------------------------------------------------------- Initial Settings*/
+:root {
+    --main-font: sans-serif;
+    --font-size: 16px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    color: white;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 0;
+    background: #1E1E1E;
+}
+
+/*-------------------------------------------------------- Styles*/
+#general-container {
+    text-align: center;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    border: solid 1px #ddd;
+}
+
+
+h1 {
+    margin: 0 auto;
+    padding: 0.5rem;
+    background: #A93226;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.2rem;
+    background: #3498DB;
+    width: 100%;
+}
+
+div {
+    width: 100%;
+}
+
+.divURL {
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lblUrl {
+    width: 100%;
+    font-size: 16px;
+    padding: 0.3rem 0;
+}
+
+#etUrl {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+}
+
+#btnConectar {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 0.5rem;
+}
+
+.slideContainer, .divMotor2 {
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#lblRed, #lblGreen, #lblBlue, #lblVelocidad{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* arriba derecha abajo izquierda */
+    padding: 0 0 1rem 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sRed, #sGreen, #sBlue, #sMotor {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sRed::-webkit-slider-thumb, #sGreen::-webkit-slider-thumb, #sBlue::-webkit-slider-thumb, #sMotor::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #3498DB;
+}
+
+#sRed::-webkit-slider-thumb {
+    background: #C0392B;
+}
+
+#sGreen::-webkit-slider-thumb {
+    background: #2ECC71;
+}
+
+#sBlue::-webkit-slider-thumb {
+    background: #3498DB;
+}
+
+.divMotor1, .divMotor2, .divMotor3 {
+    padding: 0.5rem;
+}
+
+#lblGiro {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1rem 0;
+}
+
+#btnInvGiro {
+    width: 30%;
+    height: 30px;
+    font-size: var(--font-size);
+
+    border: none;
+    border-radius: 5px;
+}
+
+#btnInvGiro:hover {
+    background: rgb(113, 228, 113);
+    border: none;
+}
+
+.divMotor3 {
+    max-width: 480px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lblN {
+    text-align: right;
+    width: 30%;
+    justify-content: left;
+}
+
+#lblNombre {
+    text-align: center;
+    width: 70%;
+    justify-content: center;
+}
+
+#lblN, #lblNombre {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 1rem 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btnCopiar {
+    width: 20%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: var(--font-size);
+    border: solid 2px red;
+}

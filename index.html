@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Internet de las cosas</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+
+        <div id="general-container">
+
+            <h1>INTERNET DE LAS COSAS</h1>
+
+            <!--
+                <div class="divURL">
+                <label id="lblUrl">URL: </label>
+                <input type="text" value="https://ejeiot1-default-rtdb.firebaseio.com/" id="etUrl">
+                <input type="button" value="Conectar" id="btnConectar">
+                </div>
+            -->
+            
+            <h2>LED RGB</h2>
+            
+            <div class="slideContainer">
+                <label id="lblRed">Rojo: 0</label>
+                <input type="range" min="0" max="255" value="0" class="slider" id="sRed">
+            </div>
+            
+            <div class="slideContainer">
+                <label id="lblGreen">Verde: 0</label>
+                <input type="range" min="0" max="255" value="0" class="slider" id="sGreen">
+            </div>
+            
+            <div class="slideContainer">
+                <label id="lblBlue">Azul: 0</label>
+                <input type="range" min="0" max="255" value="0" class="slider" id="sBlue">
+            </div>
+            
+            <h2>Motor DC</h2>
+            
+            <div class="divMotor1">
+                <label id="lblGiro">Giro: Horario</label>
+                <input type="button" value="Invertir Giro" id="btnInvGiro">
+            </div>
+
+            <div class="divMotor2">
+                <label id="lblVelocidad">Velocidad: 0 %</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="sMotor">
+                <br>
+            </div>
+            
+            <!--
+                <div class="divMotor3">
+                <label id="lblN">Nombre:</label>
+                <label id="lblNombre">--------------------</label>
+                <input type="button" value="Copiar" id="btnCopiar">
+                </div>
+            -->
+
+        </div>
+
+        <script src="funciones.js" type="module"></script>
+
+    </body>
+</html>
